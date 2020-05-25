@@ -6,4 +6,4 @@ A supermarket is offering an organic product to customers and it wants to know w
 
 
 
-![Visualization](models.png)
+![Visualization](roc_summary.png)
