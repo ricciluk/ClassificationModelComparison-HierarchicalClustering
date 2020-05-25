@@ -11,7 +11,7 @@ Compare the classification results based on the following models:
 
 
 ROC Curve Overview by Models
-
+![Visualization](roc_summary.png)
 
 
 ### Hierarchical Clustering
