@@ -7,7 +7,8 @@ A supermarket is offering an organic product to customers and it wants to know w
 
 ### Classification Models
 Compare the classification results based on the following models:
-- LightGBM, RandomForest, XGBoost, LogisticRegression, Neural Network
+- LightGBM, RandomForest, XGBoost, LogisticRegression, Neural Network  
+
 
 ROC Curve Overview by Models
 ![Visualization](roc_summary.png)
