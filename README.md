@@ -19,3 +19,4 @@ This section focuses on using hierarchical clustering to segment the customer pr
 
 
 ![Visualization](cluster_viz1.png)
+![Visualization](cluster_viz2.png)
