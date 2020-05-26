@@ -16,3 +16,6 @@ ROC Curve Overview by Models
 
 ### Hierarchical Clustering
 This section focuses on using hierarchical clustering to segment the customer profiles and explore significant difference between segments for informing better marketing strategy. 
+
+
+![Visualization](cluster_viz1.png)
