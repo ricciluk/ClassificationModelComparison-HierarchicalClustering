@@ -28,6 +28,9 @@ plt.title("Dendrograms")
 dend = sch.dendrogram(sch.linkage(normalize(organics_dt), method='ward'))
 
 #AgglomerativeClustering
+#Agglomerative Hierarchical Clustering:
+#We assign each point to an individual cluster in this technique. 
+#Then, at each iteration, we merge the closest pair of clusters and repeat this step until only a single cluster is left.
 def agg_cluser(data):
     #normalize data
     scaled_data=pd.DataFrame(normalize(organics_dt))
