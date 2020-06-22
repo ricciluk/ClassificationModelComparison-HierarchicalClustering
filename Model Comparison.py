@@ -142,12 +142,15 @@ from keras.models import Sequential
 from keras.layers import Dense
 def nn_clf(train_x,train_y,test_x,test_y):
     nn_model=Sequential()
-    nn_model.add(Dense(30,input_dim=32,activation='relu'))
+    nn_model.add(Dense(30,input_dim=32,activation='relu')) #input_dim: number of variables, 30 nodes for the first hidden layer
     nn_model.add(Dense(15, activation='relu'))
 #    nn_model.add(Dense(15, activation='relu'))
 #    nn_model.add(Dense(15, activation='relu'))
     nn_model.add(Dense(1, activation='sigmoid'))
     nn_model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+    #Cross Entropy: Loss Function for Classification Models
+    #Optimizer: 'adam' stochastic gradient descent algorithm
+    
     nn_model.fit(train_x, train_y, epochs=10, batch_size=5)
     #epoch: run a fixed number of iterations through the data set
     #batch_size(gradient descent): number of samples passed to be trained for updating the algorithm and improving performance;
