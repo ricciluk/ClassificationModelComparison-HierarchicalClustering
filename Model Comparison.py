@@ -149,6 +149,8 @@ def nn_clf(train_x,train_y,test_x,test_y):
     nn_model.add(Dense(1, activation='sigmoid'))
     nn_model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
     nn_model.fit(train_x, train_y, epochs=10, batch_size=5)
+    #epoch: run a fixed number of iterations through the data set
+    #batch_size(gradient descent): number of samples passed to be trained for updating the algorithm and improving performance;
     
     nn_roc_auc=roc_auc_score(test_y, nn_model.predict_classes(test_x))
     fpr_nn, tpr_nn = roc_curve(test_y,nn_model.predict_proba(test_x))[:2]
