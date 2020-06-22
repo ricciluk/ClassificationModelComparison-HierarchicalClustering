@@ -143,10 +143,12 @@ from keras.layers import Dense
 def nn_clf(train_x,train_y,test_x,test_y):
     nn_model=Sequential()
     nn_model.add(Dense(30,input_dim=32,activation='relu')) #input_dim: number of variables, 30 nodes for the first hidden layer
+    #ReLU: rectified linear unit -> y=max(0,x)
     nn_model.add(Dense(15, activation='relu'))
 #    nn_model.add(Dense(15, activation='relu'))
 #    nn_model.add(Dense(15, activation='relu'))
     nn_model.add(Dense(1, activation='sigmoid'))
+    #sigmoid: easy to map the expected result of probability between 0 and 1
     nn_model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
     #Cross Entropy: Loss Function for Classification Models
     #Optimizer: 'adam' stochastic gradient descent algorithm
